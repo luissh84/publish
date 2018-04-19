@@ -1,0 +1,11 @@
+version: '2'
+services:
+    publish-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/publish/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=publish
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
